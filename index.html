@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Clients</title>
+</head>
+<body>
+    <h1>Real-Time Clients</h1>
+    <ul id="clientList"></ul>
+
+    <script>
+        const clientListElement = document.getElementById('clientList');
+
+        // Connect to the WebSocket server
+        const ws = new WebSocket('ws://localhost:3000');
+
+        // Listen for messages from the server
+        ws.onmessage = (event) => {
+            // Parse the incoming data
+            const clients = JSON.parse(event.data);
+
+            // Clear the list
+            clientListElement.innerHTML = '';
+
+            // Render the updated list
+            clients.forEach((client, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${index + 1}. ${client.name} (Status: ${client.status})`;
+                clientListElement.appendChild(li);
+            });
+        };
+
+        // Handle WebSocket connection errors
+        ws.onerror = (err) => {
+            console.error('WebSocket error:', err);
+        };
+    </script>
+</body>
+</html>
