@@ -1,7 +1,7 @@
 # ChatApp-using-TCP
-<br>
-Technologies Used: 
--- Backend: C => Socket Programming
+
+## Technologies Used: 
+   **Backend:** C => Socket Programming
          Node.js => Routing
--- Frontend: ReactJs => UI design
+   **Frontend:** ReactJs => UI design
           CSS, Bootstrap
