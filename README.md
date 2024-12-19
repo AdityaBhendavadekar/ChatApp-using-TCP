@@ -2,8 +2,8 @@
 
 ## Technologies Used: 
    **Backend:** 
-         -C => Socket Programming
-         +Node.js => Routing
+         1. C => Socket Programming
+         2. Node.js => Routing
    **Frontend:** 
-         - ReactJs => UI design
-         + CSS, Bootstrap
+         1. ReactJs => UI design
+         2. CSS, Bootstrap
