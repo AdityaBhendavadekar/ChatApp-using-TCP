@@ -38,16 +38,3 @@ The application follows a client-server architecture:
 3. **Frontend (React.js):** Displays real-time messages, connected users, and other interface components dynamically.
 
 ---
-
-## Installation & Setup
-
-### Prerequisites:
-- GCC or any C compiler
-- Node.js and npm
-- A modern web browser
-
-### Steps:
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/ChatApp-using-TCP.git
-   cd ChatApp-using-TCP
